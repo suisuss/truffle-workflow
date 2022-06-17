@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --reset --network rinkeby",
+    "deploy": "truffle deploy --reset --network rinkeby",
+    "verify-rinkeby": "node ./verification/create-rinkeby-log.txt.js && sh ./verification/verify-rinkeby.sh",
+    "verify-mainnet": "node ./verification/create-mainnet-log.txt.js && sh ./verification/verify-mainnet.sh",
+    "test": "truffle test --network rinkeby"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "truffle-plugin-verify": "^0.5.12"
+  }
+}
